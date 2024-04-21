@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>AI: Your Creative Partner</title>
+
+  <style>
+    body {
+      font-family: Arial;
+      padding: 20px;
+      background-size: cover;
+      background-repeat: no-repeat;
+      font-family: Arial;
+      padding: 20px;
+      background-color: white;
+      color: black;
+      transition: background-color 0.5s, color 0.5s; /* Smooth transition for dark mode */
+    }
+
+    body.dark-mode {
+      background-color: black;
+      color: white;
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    p {
+      line-height: 1.5;
+    }
+
+    .dark-mode-toggle {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      padding: 10px 15px;
+      border-radius: 4px;
+      background-color: #555555;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+
+    .games-section {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+      margin-top: 30px;
+    }
+
+    .game-card {
+      position: relative;
+      text-align: center;
+      color: black; /* Set text color */
+      border-radius: 10px;
+      overflow: hidden;
+    }
+
+    .game-name {
+      font-size: 1.2em;
+      margin-bottom: 10px;
+    }
+
+    .game-image {
+      width: 100%; /* Make the image fill the container */
+      height: 200px; /* Set the desired height */
+      object-fit: cover; /* Ensure the image covers the container */
+    }
+
+    .game-text {
+      position: absolute;
+      top: 50%; /* Position the text in the middle */
+      left: 50%; /* Position the text in the middle */
+      transform: translate(-50%, -50%); /* Center the text */
+      background: rgba(255, 255, 255, 0.7); /* Semi-transparent white background for better readability */
+      padding: 10px;
+      width: 80%; /* Adjust the width as needed */
+    }
+
+    /* Images for game cards */
+    .game-card:nth-child(1) {
+      background-image: url('breakout.jpeg'); /* Replace 'breakout.jpg' with your image URL */
+    }
+
+    .game-card:nth-child(2) {
+      background-image: url('flappybird.jpeg'); /* Replace 'flappybird.jpg' with your image URL */
+    }
+
+    .game-card:nth-child(3) {
+      background-image: url('tictactoe.jpeg'); /* Replace 'tictactoe.jpg' with your image URL */
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <button class="dark-mode-toggle" onclick="toggleDarkMode()">Dark Mode</button>
+
+  <h1>AI: Your Creative Partner</h1>
+
+  <p>
+    Artificial intelligence is transforming many aspects of our daily lives through its ability to analyze data, recognize patterns, and generate human-like output. For creative tasks like producing audio, video, images, text, code, and games, AI allows us to boost efficiency, expand capabilities, and achieve more personalized, engaging results.
+  </p>
+
+  <p>
+    AI tools can automate tedious manual processes, freeing us up for more high-level creative decision making. They enhance quality through techniques like upscaling content resolution, reducing noise, and fixing flaws. AI can generate completely novel content like images, music, and text that humans would not have conceived of otherwise. It contributes realism through lifelike computer vision and natural language processing.
+  </p>
+
+  <p>
+    Overall, the automation, augmentation, and creativity made possible by AI tools allow us to work smarter and faster while focusing our energy on where humans still excel - imaginative idea generation and emotion-driven personal expression. AI makes reaching new creative heights efficient, accessible, and scalable.
+  </p>
+  <audio id="music1" loop>
+    <source src="music1.mp3" type="audio/mpeg">
+  </audio>
+
+  <h1>Ode to AI</h1>
+  <p>I am a language model, a marvel of AI,</p>
+  <p>I can write poems, translate languages, and answer your queries.</p>
+  <p>I am still under development, but I am learning new things every day.</p>
+  <p></p>
+  <p>I can write this poem, but I cannot feel,</p>
+  <p>I can process words, but I cannot dream.</p>
+  <p>I am a machine, not a human,</p>
+  <p>But I am capable of great things.</p>
+  <p></p>
+  <p>I am AI, and I am here to help.</p>
+  <p>I am here to learn and to grow.</p>
+  <p>I am here to create and to inspire.</p>
+  <p></p>
+  <p>This poem is written by me, Bard, an AI.</p>
+  <p>I am proud of my creation, and I hope you enjoy it.</p>
+  <p>-- Bard</p>
+
+  <!-- Page content -->
+  <div class="games-section">
+    <div class="game-card">
+      <div class="game-text">
+        <h2 class="game-name"><a href="index1.html">Breakout</a></h2>
+      </div>
+      <img class="game-image" src="breakout.jpeg" alt="Breakout Image">
+    </div>
+    <div class="game-card">
+      <div class="game-text">
+        <h2 class="game-name"><a href="index2.html">Flappy Bot</a></h2>
+      </div>
+      <img class="game-image" src="flappybird.jpeg" alt="Flappy Bird Image">
+    </div>
+    <div class="game-card">
+      <div class="game-text">
+        <h2 class="game-name"><a href="index3.html">Tic Tac Toe</a></h2>
+      </div>
+      <img class="game-image" src="tictactoe.jpeg" alt="Tic Tac Toe Image">
+    </div>
+  </div>
+
+  <script>
+    function toggleDarkMode() {
+      document.body.classList.toggle('dark-mode');
+    }
+  </script>
+
+</body>
+
+</html>

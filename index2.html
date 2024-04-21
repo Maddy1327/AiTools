@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flappy Bird Game</title>
+  <link rel="stylesheet" type="text/css" href="styles2.css">
+</head>
+<body>
+  <div class="game-container">
+    <h1 style="text-align: center;">Flappy Bird Game</h1>
+    <canvas id="canvas" width="800" height="400"></canvas>
+  </div>
+
+  <!-- Add the audio element for the game music -->
+  <audio id="gameAudio" loop>
+    <source src="musicc2.mp3" type="audio/mpeg">
+  </audio>
+
+  <script src="script2.js"></script>
+
+  <script>
+    // Add this script to play the audio when the page loads
+    document.addEventListener("DOMContentLoaded", function() {
+      const audio = document.getElementById("gameAudio");
+
+      // Play the audio in response to a user action (click)
+      document.addEventListener("click", function() {
+        audio.play();
+        // Remove the click event listener to avoid playing the audio multiple times
+        document.removeEventListener("click", arguments.callee);
+      });
+    });
+  </script>
+</body>
+</html>
